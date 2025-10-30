@@ -9,14 +9,16 @@ Se você é novato no desenvolvimento e uso de MCPs, eu recomendo começar por e
 ## Serviços
 
 Já existem alguns serviços prontos para servidores MCPs. Funcionam na base de assinaturas mensais. Exemplos:
+
 - [Storm MCP](https://stormmcp.ai)
 - [Traefik Labs](https://traefik.io/solutions/mcp-gateway)
 
-São muito fáceis de serem usados, basta selecionar os servidores desejados e seu gateway já está pronto. 
+São muito fáceis de serem usados, basta selecionar os servidores desejados e seu gateway já está pronto.
 
 O inconveniente é que só é possível usar servidores que estão disponíveis na plataforma. Se você quiser algum que ainda não foi homologado por eles, não terá como incluir no gateway, o que em alguns casos poderá ser muito limitante.
 
 ## Docker
+
 O Docker criou um [kit](https://github.com/docker/mcp-gateway) para o desenvolvimento de MCP Gateways com muitos recursos.
 
 É muito simples criar um gateway para uso local, em sua própria máquina, através do MCP Toolkit, veja [aqui](https://github.com/docker/mcp-gateway/blob/main/docs/mcp-gateway.md) algumas instruções.
@@ -71,29 +73,28 @@ Se quiser uma lista mais completa de servidores remotos de MCP, aqui tem algumas
 - [Awesome Remote MCP](https://github.com/jaw9c/awesome-remote-mcp-servers)
 
 ### Use o FastMCP
+
 Combine o FastMCP [Server](https://gofastmcp.com/servers/server) com o FastMCP [Client](https://gofastmcp.com/clients/client) para criar o seu gateway.
 Veja nesse reposiório:
+
 - [scp_01.py](scp_01.py)
-    Um exemplo simples de como criar um `server` MCP.
+  Um exemplo simples de como criar um `server` MCP.
 - [scp_02.py](scp_02.py)
-    Um exemplo simples de como criar um `client` MCP.
+  Um exemplo simples de como criar um `client` MCP.
 - [scp_03.py](scp_03.py)
-    Um exemplo simples de como combinar os dois.
+  Um exemplo simples de como combinar os dois.
 
 Naturalmente, os exemplos são muito simples, não consideram servidores que requerem autenticação, tampouco contém a autenticação ao próprio gateway criado. Mas é um bom começo para quem quer desenvolver o seu próprio gateway, sem as limitações citadas anteriormente.
 
 Obs. Existe um pacote PIP, com recursos para criar gateways, mas eu ainda não testei:
+
+
 [https://pypi.org/project/mcp-gateway](https://pypi.org/project/mcp-gateway)
-
-
 
 ## Saiba mais
 
-[The MCP Gateway: An AI Engineer's Comprehensive Guide](https://skywork.ai/skypage/en/The-MCP-Gateway:-An-AI-Engineer's-Comprehensive-Guide/1971111013272055808)
+[The MCP Gateway: An AI Engineer&#39;s Comprehensive Guide](https://skywork.ai/skypage/en/The-MCP-Gateway:-An-AI-Engineer's-Comprehensive-Guide/1971111013272055808)
 
 [Understanding MCP Gateway: Your Essential Guide to Seamless Connectivity](https://api7.ai/blog/understanding-mcp-gateway)
-
-
-
 
 .
