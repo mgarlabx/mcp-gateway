@@ -7,7 +7,7 @@ async def search_experiences(query: str) -> float:
     """Search for travel experiences with comprehensive filtering options. Returns available categories, tags, and regions with IDs for further filtering."""
     client = Client("https://mcp.peek.com")
     async with client:
-        result = await client.call_tool("search_experiences", {"query": "bike"})
+        result = await client.call_tool("search_experiences", {"query": query})
         return result
 
 @mcp.tool
